@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMagic - Your Ultimate Movie Destination</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <div class="container navbar-content">
+                <div class="navbar-brand">CineMagic</div>
+                <ul class="navbar-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" class="main-content">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Welcome to CineMagic</h1>
+                <p>Discover the latest blockbusters and timeless classics in our curated collection of cinematic wonders</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-genre="all">All</button>
+                <button class="filter-btn" data-genre="Action">Action</button>
+                <button class="filter-btn" data-genre="Drama">Drama</button>
+                <button class="filter-btn" data-genre="Sci-Fi">Sci-Fi</button>
+                <button class="filter-btn" data-genre="Comedy">Comedy</button>
+                <button class="filter-btn" data-genre="Thriller">Thriller</button>
+            </div>
+            <div class="movie-grid" id="movieGrid"></div>
+        </div>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <p>&copy; 2023 CineMagic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div id="movieDetails" class="movie-details"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+   
+</body>
+</html> 
+
+
